@@ -566,6 +566,50 @@ i.btn-excluir{
     margin-left: 1rem;
 }
 
+/* Image Lists */
+
+.image-list{
+    align-items: center;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-list img{
+    padding: 1rem;
+    width: 10vw;
+}
+
+/* Action and Buttons */
+
+.actions-buttons{
+    align-items: center;
+    display: flex;
+    margin-top: var(--default-padding);
+    width: 100%;
+} 
+
+.actions-buttons.right{
+    justify-content: flex-end;
+}
+
+.actions-buttons .button{
+    background: var(--cor-reforco-positivo);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+                                    
+
+/* Gerenciamento */
+
+#gerenciamento p{
+    margin-bottom: 2rem;
+}
 
 /* Cadastro de Famílias */
 
