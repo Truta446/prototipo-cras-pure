@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRAS</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo-menu-container">
+            <a href="#" id="menu-button"><i class="fa fa-bars"></i></a>
+
+            <div id="logo">
+                <h1>CRAS</h1>
+                <h2>GERENCIAMENTO</h2>
+            </div>
+        </div>
+        <div id="menu-container">
+            <div id="menu" class="active">
+                <div id="busca-container">
+                    <input type="search" id="input-busca" placeholder="Digite para buscar" required/>
+                    <i class="fa fa-search"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#entrada"><i class="fa fa-home"></i><span>Entrada</span></a></li>
+                        <li><a href="#familias"><i class="fa fa-list-alt"></i><span>Famílias</span></a></li>
+                        <li><a href="#atendimento"><i class="fa fa-hotel"></i><span>Atendimento</span></a></li>
+                        <li><a href="#acompanhamento"><i class="fa fa-hands"></i><span>Acompanhamento</span></a></li>
+                        <li><a href="#relatorios"><i class="fa fa-chart-area"></i><span>Relatórios</span></a></li>
+                        <li><a href="#gerenciamento"><i class="fa fa-database"></i><span>Gerenciamento</span></a></li>
+                        <li><a href="#configuracoes"><i class="fa fa-cog"></i><span>Configurações</span></a></li>
+                        <li><a href="#ajuda"><i class="fa fa-question-circle"></i><span>Ajuda</span></a></li>
+                        <li><a href="#sobre"><i class="fa fa-info-circle"></i><span>Sobre</span></a></li>
+                    </ul>
+                </nav>
+
+                <i id="menu-retract" class="fas fa-angle-left"></i>
+            </div>
+        </div>
+        <div class="profile-container">
+            <a class="profile-pic" href="#">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/13913/profile/profile-80.jpg?1" alt="Profile pic">
+            </a>
+            <i class="fa fa-ellipsis-v"></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- Dashboard   -->
+        <section id="entrada" class="page active">
+            <div class="content">
+                <h1>Seja bem vindo</h1>
+                <p>Você está acessando um protótipo funcional parcial. As funcionalidades aqui apresentadas serão submetidas
+                    à validação por parte dos usuários do sistema. Fique à contade para navegar e conhecer a proposta de
+                    software. </p>
+            </div>
+        </section>
+
+        <!-- Famílias   -->
+
+        <section id="familias" class="page">
+            <div class="context-header">
+                <h1 class="context-title">Famílias</h1>
+            </div>
+
+            <div class="content">
+                <h1>Gerenciamento de Famílias</h1>
+
+                <div id="lista-familias" class="lista hidden">
+                    <div class="lista-topo">
+                        <div class="controls-left">
+                            <a href="#" id="btn-adicionar-familia"><i class="fa fa-plus-square"></i>Adicionar família</a>
+                        </div>
+                        <div class="controls-right">
+                            <input type="text" placeholder="Digite um nome ou um número de documento" />
+                        </div>
+                    </div>
+
+                    <div class="conteudo-lista">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Referência</th>
+                                    <th>Sexo</th>
+                                    <th>Nasc.</th>
+                                    <th>NIS</th>
+                                    <th>CPF</th>
+                                    <th>RG</th>
+                                    <th>Componentes</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Luana Pereira da Silva</td>
+                                    <td>Feminino</td>
+                                    <td>10/04/1992</td>
+                                    <td>213812763</td>
+                                    <td>372.924.965-80</td>
+                                    <td>00132823 SSP/MS</td>
+                                    <td>Mário (Filho), Cristina (Filha), Rauani (Filha)</td>
+                                    <td>
+                                        <div>
+                                            <a href="#"><i class="fa fa-edit btn-editar"></i></a>
+                                            <a href="#"><i class="fa fa-trash btn-excluir"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Rosana Marque Albuquerque</td>
+                                    <td>Feminino</td>
+                                    <td>12/10/1987</td>
+                                    <td>1283728372</td>
+                                    <td>482.274.387-42</td>
+                                    <td>8271382 SSP/RS</td>
+                                    <td>Lyncon (Filho), Marcelo (Filho), José (Esposo)</td>
+                                    <td>
+                                        <div>
+                                            <a href="#"><i class="fa fa-edit btn-editar"></i></a>
+                                            <a href="#"><i class="fa fa-trash btn-excluir"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Edimar Rosa do Santos</td>
+                                    <td>Masculino</td>
+                                    <td>01/03/1975</td>
+                                    <td>833123272</td>
+                                    <td>123.321.521-87</td>
+                                    <td>002987237 SSP/MS</td>
+                                    <td>Joelma (Esposa), Clóvis (Irmão), Rubens (Filho)</td>
+                                    <td>
+                                        <div>
+                                            <a href="#"><i class="fa fa-edit btn-editar"></i></a>
+                                            <a href="#"><i class="fa fa-trash btn-excluir"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="form-familias-container">
+                    <div class="tabs-container">
+                        <ul>
+                            <li><a data-tab-id="tab-identificacao" class="tab-link active">Identificação</a></li>
+                            <li><a data-tab-id="tab-composicao" class="tab-link ">Composição</a></li>
+                            <li><a data-tab-id="tab-condicoes" class="tab-link ">Condições</a></li>
+                            <li><a data-tab-id="tab-beneficios" class="tab-link ">Benefícios</a></li>
+                            <li><a data-tab-id="tab-convivencia" class="tab-link ">Convivência</a></li>
+                            <li><a data-tab-id="tab-situacoes" class="tab-link ">Situações</a></li>
+                            <li><a data-tab-id="tab-historico" class="tab-link ">Histórico</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tabs-content">
+                        <div class="tab-area active" id="tab-identificacao">
+                            <form>
+                                <fieldset id="cadastro-identificacao">
+                                    <legend>Identificação de referência</legend>
+                                    <div id="area-nome-completo" class="input-container">
+                                        <label for="nome-completo">Nome completo</label>
+                                        <input id="nome-completo" name="nome-completo" type="text" />
+                                    </div>
+                                    <div class="input-container-line">
+                                        <div id="area-apelido" class="input-container">
+                                            <label for="apelido">Apelido (caso pertinente)</label>
+                                            <input id="apelido" name="apelido" type="text" />
+                                        </div>
+                                        <div id="area-nome-mae" class="input-container">
+                                            <label for="nome-mae">Nome da Mãe</label>
+                                            <input id="nome-mae" name="nome-mae" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="input-container-line">
+                                        <div id="area-cpf" class="input-container">
+                                            <label for="cpf">CPF</label>
+                                            <input id="cpf" name="cpf" type="text" />
+                                        </div>
+                                        <div id="area-nis" class="input-container">
+                                            <label for="nis">NIS</label>
+                                            <input id="nis" name="nis" type="text" />
+                                        </div>
+                                    </div>
+
+                                    <div class="input-container-line">
+                                        <div id="area-rg" class="input-container">
+                                            <label for="rg">RG</label>
+                                            <input id="rg" name="rg" type="text" />
+                                        </div>
+
+                                        <div id="area-emissor" class="input-container">
+                                            <label for="emissor">Orgão Emissor</label>
+                                            <input id="emissor" name="emissor" type="text" />
+                                        </div>
+                                        <div id="area-data" class="input-container">
+                                            <label for="data-emissao">Data de Emissão</label>
+                                            <input id="data-emissao" name="data-emissao" type="text" />
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset id="cadastro-endereco">
+                                    <legend>Dados de endereço</legend>
+                                    <div id="area-endereco" class="input-container">
+                                        <label for="endereco">Endereço</label>
+                                        <input id="endereco" name="endereco" type="text" />
+                                    </div>
+                                    <div class="input-container-line">
+                                        <div id="area-bairro" class="input-container">
+                                            <label for="bairro">Bairro</label>
+                                            <input id="bairro" name="bairro" type="text" />
+                                        </div>
+                                        <div id="area-municipio" class="input-container">
+                                            <label for="municipio">Município</label>
+                                            <input id="municipio" name="municipio" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="input-container-line">
+                                        <div id="area-cep" class="input-container">
+                                            <label for="cep">CEP</label>
+                                            <input id="cep" name="cep" type="text" />
+                                        </div>
+                                        <div id="area-complemento" class="input-container">
+                                            <label for="complemento">Complemento</label>
+                                            <input id="complemento" name="complemento" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="input-container-line">
+                                        <div id="area-ponto-referencia" class="input-container">
+                                            <label for="ponto-referencia">Ponto de referência</label>
+                                            <input id="ponto-referencia" name="ponto-referencia" type="text" />
+                                        </div>
+                                        <div id="area-contatos" class="input-container">
+                                            <label for="contatos">Telefones de contato</label>
+                                            <input id="contatos" name="contatos" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="input-container-line">
+                                        <div id="area-localizacao" class="radio-container">
+                                            <span class="radio-label">Localização</span>
+                                            <label><input name="localizacao" type="radio" /> Urbano</label>
+                                            <label><input name="localizacao" type="radio" /> Rural</label>
+                                            <label><input name="localizacao" type="radio" /> Abrigo</label>
+                                        </div>                                        
+                                    </div>
+                                </fieldset>
+                                <fieldset id="forma-ingresso">
+                                    <legend>Forma de Ingresso</legend>
+                                    <div id="area-forma-ingresso" class="input-container">
+                                        <label for="forma-ingresso">Selecione uma forma de ingresso</label>
+                                        <input id="forma-ingresso" name="endereco" type="text" />
+                                    </div>
+                                    <div class="input-container-line">
+                                        <div id="area-reponsavel-encaminhamento" class="input-container">
+                                            <label for="reponsavel-encaminhamento">Reponsável pelo encaminhamento</label>
+                                            <input id="reponsavel-encaminhamento" name="bairro" type="text" />
+                                        </div>
+                                        <div id="area-contato" class="input-container">
+                                            <label for="contato">Contato do responsável</label>
+                                            <input id="contato" name="contato" type="text" />
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <div class="tab-area" id="tab-composicao">
+                            <form>
+                                <fieldset>
+                                    <legend>Identificação de referência</legend>
+                                    <div class="input-container">
+                                        <label for="nome-completo">Nome completo</label>
+                                        <input id="nome-completo" name="nome-completo" type="text" />
+                                    </div>                                    
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <div class="tab-area" id="tab-condicoes"></div>
+                        <div class="tab-area" id="tab-beneficios"></div>
+                        <div class="tab-area" id="tab-convivencia"></div>
+                        <div class="tab-area" id="tab-situacoes"></div>
+                        <div class="tab-area" id="tab-historico"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Atendimentos   -->
+
+        <section id="atendimento" class="page">
+            <div class="context-header">
+                <h1 class="context-title">Atendimentos</h1>
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, excepturi corporis a quibusdam reprehenderit
+                    temporibus eligendi? Ipsum ex eos beatae, perferendis minus officiis nesciunt recusandae quos modi vitae,
+                    porro quam.</p>
+            </div>
+        </section>
+
+        <!-- Acompanhamento   -->
+
+        <section id="acompanhamento" class="page">
+            <div class="context-header">
+                <h1 class="context-title">Acompanhamento</h1>
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, excepturi corporis a quibusdam reprehenderit
+                    temporibus eligendi? Ipsum ex eos beatae, perferendis minus officiis nesciunt recusandae quos modi vitae,
+                    porro quam.</p>
+            </div>
+        </section>
+
+        <!-- Relatórios   -->
+
+        <section id="relatorios" class="page">
+            <div class="context-header">
+                <h1 class="context-title">Relatórios</h1>
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, excepturi corporis a quibusdam reprehenderit
+                    temporibus eligendi? Ipsum ex eos beatae, perferendis minus officiis nesciunt recusandae quos modi vitae,
+                    porro quam.</p>
+            </div>
+        </section>
+
+        <!-- Gerenciamento   -->
+
+        <section id="gerenciamento" class="page">
+            <div class="context-header">
+                <h1 class="context-title">Gerenciamento</h1>
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, excepturi corporis a quibusdam reprehenderit
+                    temporibus eligendi? Ipsum ex eos beatae, perferendis minus officiis nesciunt recusandae quos modi vitae,
+                    porro quam.</p>
+            </div>
+        </section>
+
+        <!-- Configurações   -->
+
+        <section id="configuracoes" class="page">
+            <div class="context-header">
+                <h1 class="context-title">Configurações</h1>
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, excepturi corporis a quibusdam reprehenderit
+                    temporibus eligendi? Ipsum ex eos beatae, perferendis minus officiis nesciunt recusandae quos modi vitae,
+                    porro quam.</p>
+            </div>
+        </section>
+
+        <!-- Ajuda  -->
+
+        <section id="ajuda" class="page">
+            <div class="context-header">
+                <h1 class="context-title">Ajuda</h1>
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, excepturi corporis a quibusdam reprehenderit
+                    temporibus eligendi? Ipsum ex eos beatae, perferendis minus officiis nesciunt recusandae quos modi vitae,
+                    porro quam.</p>
+            </div>
+        </section>
+
+        <!-- Sobre   -->
+
+        <section id="sobre" class="page">
+            <div class="context-header">
+                <h1 class="context-title">Sobre</h1>
+            </div>
+
+            <div class="content">
+                <p>Atualmente, conhecer seus dados de forma geográfica é um grande diferencial no processo de tomada de decisão.
+                    A SEMAS, por meio dos Centros de Referência de Assistência Social (CRAS), realizam atendimentos a diversas
+                    famílias da sua região de abrangência, promovendo ações preventiva e protetiva das famílias, fortalecendo
+                    vínculos familiares e comunitário. O CRAS do Canaã I atende aproximadamente 4 mil famílias em uma região
+                    que engloba 58 bairros. No momento, todas essas famílias são cadastradas de forma manual, o que dificulta
+                    a obtenção de informações quando existe a necessidade de tomar uma decisão sobre definir qual ação executar
+                    em um determinado local. É difícil, por exemplo, saber em que local estão as famílias em estado de extrema
+                    vulnerabilidade para traçar uma estratégia de auxílio.</p>
+
+                <p>Conhecendo essa realidade, docentes e discentes do IFMS e da UEMS vem propor a informatização da base
+                    de dados desse CRAS, de forma georreferenciada para que se possa gerar mapas ajudando a conhecer a realidade
+                    desses bairros e a realização de atividades pontuais para um determinado grupo de famílias. Além disso,
+                    um banco de dados georrefenciado pode gerar informações geográficas utilizando a cartografia temática.
+                    Esse tipo de cartografia ajuda no conhecimento do ambiente, por meio, por exemplo, de mapas de calor.
+                    </p>
+                <p>As ações a serem desenvolvidas nesse projeto propiciarão aos parceiros:</p>
+                <ul class="spaced">
+                    <li>discentes estarem em contato com a execução prática dos conteúdos teóricos das unidades curriculares;</li>
+                    <li>docentes no desenvolvimento de pesquisas;</li>
+                    <li>Servidores Municipais da SEMAS participarem como agentes ativos na realização do projeto, seja por
+                        meio de fornecimento de dados, pela utilização de ferramentas tecnológicas desenvolvidas ou mesmo
+                        pelo direcionamento dos resultados;</li>
+                </ul>
+                <p>Visto que além de estarem aprendendo as teorias da disciplina e colocando-as em prática, os Discentes
+                    estarão envolvidos no projeto, com o intuito de desenvolver a capacidade intelectual, empreendedora e
+                    e fomentando as pesquisas acadêmicas.
+                    </li>
+                </p>
+
+            </div>
+        </section>
+    </main>
+    <script src="js/helpers.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/familias.js"></script>
+</body>
+
+</html>
